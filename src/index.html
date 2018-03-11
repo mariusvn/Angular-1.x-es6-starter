@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="app" lang="en">
     <head>
         <!-- ==================== Meta =================== -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" type="image/png" href="https://angular.io/assets/images/favicons/favicon-96x96.png" sizes="96x96">
 
         <!-- ==================== Script =================== -->
-        <script src="/node_modules/angular/angular.js"></script>
-        <script src="/node_modules/@uirouter/angularjs/release/angular-ui-router.js"></script>
+        <!-- head:js -->
+        <!-- only importantFile will be injected here (Prefixed by !) -->
+        <!-- endinject -->
 
         <!-- ===================== Css ===================== -->
+        <!-- inject:css -->
+        <!-- endinject -->
 
-
-        <title>Restaurant</title>
+        <title>Angular Starter</title>
+        <base href="/">
     </head>
     <body>
+
+      <div ui-view="content"></div>
+
+      <!-- inject:js -->
+      <!-- endinject -->
 
     </body>
 </html>
